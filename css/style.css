@@ -1,0 +1,845 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font: normal 16px/18px "Merriweather", "Tahoma", sans-serif;
+  font-weight: 300;
+  color: #676868; }
+
+h1 {
+  font-size: 42px;
+  line-height: 55px;
+  font-weight: 300; }
+
+h2 {
+  position: relative;
+  margin: 50px 0;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 300; }
+  h2:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 253px;
+    height: 33px;
+    margin: auto;
+    background-image: url(../img/icons/icons.png);
+    background-repeat: no-repeat;
+    background-position: -79px -5px; }
+
+.main-header {
+  width: 100%;
+  height: 100vh;
+  background: fixed url(../img/header-bg.jpg) center no-repeat #fff;
+  background-size: cover; }
+
+.main-header__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 280px;
+  margin: 0 auto; }
+
+.main-header__promo {
+  position: absolute;
+  right: 0;
+  top: 25vh;
+  width: 550px;
+  text-align: center; }
+
+.main-nav {
+  margin-top: 5%; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; }
+
+.main-nav__item {
+  display: inline-block;
+  font: 300 18px/35px "Merriweather", "Tahoma", sans-serif;
+  vertical-align: top; }
+
+.main-nav__link {
+  display: block;
+  margin: 0 10px;
+  padding: 10px 10px;
+  color: #676868;
+  text-decoration: none; }
+  .main-nav__link--active {
+    color: #676868;
+    border: 1px solid #676868; }
+  .main-nav__link:hover {
+    opacity: 0.5; }
+
+.features {
+  width: 100%;
+  background: url(../img/features-bg.jpg) 50% 50% repeat orange; }
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto; }
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 0; }
+
+.features__icon {
+  display: block;
+  height: 78px;
+  margin: 50px 0 0 0;
+  padding: 0;
+  background-repeat: no-repeat; }
+  .features__icon--soup {
+    width: 90px;
+    background-image: url(../img/icons/soup.png); }
+  .features__icon--tea {
+    width: 105px;
+    background-image: url(../img/icons/tea.png); }
+  .features__icon--cake {
+    width: 65px;
+    background-image: url(../img/icons/cake.png); }
+
+.features__title {
+  margin: 0;
+  padding: 30px 0 10px 0;
+  font: bold 18px/30px "Merriweather", "Tahoma", sans-serif; }
+
+.features__content {
+  margin: 0;
+  padding: 0 0 50px 0;
+  text-align: center; }
+
+.specials__container {
+  width: 280px;
+  margin: 0 auto; }
+
+.specials__title {
+  margin-top: 0;
+  padding-top: 50px;
+  text-align: center; }
+
+.specials__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0 100px 0;
+  list-style: none; }
+
+.specials__item {
+  display: block;
+  width: 320px; }
+  .specials__item:nth-child(n+4) .specials__link {
+    flex-direction: row-reverse; }
+
+.specials__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: #f8f8f8; }
+  .specials__link:hover {
+    opacity: .5; }
+
+.specials__promo {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  text-align: center; }
+
+.specials__promo-title {
+  margin: 0;
+  padding: 10px 0;
+  font: bold 18px/30px "Merriweather", "Tahoma", sans-serif;
+  color: black; }
+
+.specials__promo-content {
+  margin: 0;
+  padding: 10px 0; }
+
+.specials__promo-price {
+  margin: 0;
+  font: bold 18px/30px "Merriweather", "Tahoma", sans-serif;
+  color: black; }
+
+.specials__img {
+  display: inline-block;
+  width: 50%;
+  height: 160px; }
+  .specials__img--one {
+    background-image: url(../img/menu/specials-1.jpg); }
+  .specials__img--two {
+    background-image: url(../img/menu/specials-2.jpg); }
+  .specials__img--three {
+    background-image: url(../img/menu/specials-3.jpg); }
+  .specials__img--four {
+    background-image: url(../img/menu/specials-4.jpg); }
+  .specials__img--five {
+    background-image: url(../img/menu/specials-5.jpg); }
+  .specials__img--six {
+    background-image: url(../img/menu/specials-6.jpg); }
+
+.about {
+  background-color: #eeefef; }
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto; }
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding-bottom: 100px; }
+
+.about__title {
+  text-align: center; }
+
+.about__content {
+  position: relative;
+  margin: 0;
+  padding: 35px 0;
+  text-align: center; }
+  .about__content:after {
+    content: url(../img/sign.png);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: block;
+    width: 160px;
+    height: 100px; }
+
+.about__picture {
+  position: relative;
+  display: block;
+  width: 66%;
+  height: 535px;
+  overflow: hidden; }
+
+.about__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  background: url(../img/about-img.png) center no-repeat #eeefef; }
+
+.menu__container {
+  width: 280px;
+  margin: 0 auto; }
+
+.menu__header {
+  width: 480px;
+  margin: 0 auto;
+  padding: 0 0 50px 0; }
+
+.menu__title {
+  margin-top: 0;
+  padding-top: 50px;
+  text-align: center; }
+
+.menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 50px 0; }
+
+.menu__content {
+  width: 430px;
+  margin: 0; }
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font: 300 18px/1.3 "Merriweather", "Tahoma", sans-serif; }
+  .menu__item:not(:last-child) {
+    margin: 0 0 40px 0; }
+
+.menu__price {
+  display: inline-block;
+  margin: 0; }
+
+.menu__description {
+  margin: 0; }
+  .menu__description span {
+    display: block;
+    font-size: 14px;
+    font-style: italic; }
+
+.menu-nav {
+  margin: 0;
+  padding: 20px 0 0 0; }
+
+.menu-nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; }
+
+.menu-nav__item {
+  font: 300 18px/35px "Merriweather", "Tahoma", sans-serif;
+  vertical-align: top; }
+
+.menu-nav__link {
+  display: block;
+  margin: 0;
+  padding: 10px 10px;
+  color: black;
+  text-decoration: none; }
+  .menu-nav__link--active {
+    color: #676868;
+    border: 1px solid #676868; }
+  .menu-nav__link:hover {
+    opacity: 0.5; }
+
+.contacts {
+  width: 100%;
+  height: 100vh;
+  background: fixed url(../img/contacts-bg.jpg) center no-repeat #fff;
+  background-size: cover; }
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  width: 280px;
+  margin: 0 auto; }
+
+.contacts__content {
+  width: 460px;
+  margin: 0 0 0 auto; }
+
+.contacts__title {
+  margin-top: 0;
+  padding-top: 50px;
+  text-align: center; }
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  overflow: hidden; }
+
+.contacts__item {
+  width: 220px;
+  text-align: left;
+  word-wrap: break-word; }
+
+.contacts__item-title {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.contacts__form-title {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.contacts__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.contacts__form-wrapper input[type="text"],
+input[type="email"],
+textarea {
+  font-style: italic; }
+  .contacts__form-wrapper input[type="text"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: black; }
+  .contacts__form-wrapper input[type="text"]::-moz-placeholder,
+  input[type="email"]::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: black; }
+  .contacts__form-wrapper input[type="text"]:-ms-input-placeholder,
+  input[type="email"]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: black; }
+
+.contacts__form-part {
+  width: 220px;
+  margin: 0 0 40px 0;
+  border-bottom: 1px solid black; }
+  .contacts__form-part input {
+    width: 100%;
+    padding: 0 0 10px 20px;
+    background: none;
+    border: none; }
+
+.contacts__form-bottom {
+  width: 100%;
+  margin: 0 0 40px 0;
+  border-bottom: 1px solid black; }
+  .contacts__form-bottom textarea {
+    width: 100%;
+    padding: 0 0 10px 20px;
+    background: none;
+    border: none; }
+
+.contacts__form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font: 300 18px/35px "Merriweather", "Tahoma", sans-serif;
+  text-decoration: none;
+  border: 1px solid black;
+  background: none;
+  color: black; }
+  .contacts__form-btn:hover {
+    opacity: 0.5; }
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 20px 0;
+  text-align: center; }
+
+.main-footer__copyright {
+  margin: 0 0 0 auto; }
+  .main-footer__copyright a {
+    text-decoration: none;
+    color: inherit; }
+    .main-footer__copyright a:hover {
+      opacity: .5; }
+
+.main-footer__social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto; }
+
+.main-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #676868;
+  font-size: 0; }
+  .main-footer__link:hover {
+    opacity: .5; }
+  .main-footer__link:not(:last-child) {
+    margin-right: 20px; }
+  .main-footer__link svg {
+    fill: #676868; }
+  @media (min-width: 660px) {
+  .main-header__container {
+    width: 620px; }
+  .features__container {
+    width: 620px; }
+  .specials__container {
+    width: 620px; }
+  .about__container {
+    width: 620px; }
+  .menu__container {
+    width: 620px; }
+  .contacts__container {
+    width: 620px; } }
+  @media (min-width: 960px) {
+  .main-header__container {
+    width: 960px; }
+  .features__container {
+    width: 960px; }
+  .specials__container {
+    width: 960px; }
+  .about__container {
+    width: 960px; }
+  .menu__container {
+    width: 960px; }
+  .contacts__container {
+    width: 960px; } }

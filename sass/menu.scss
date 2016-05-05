@@ -1,0 +1,64 @@
+.menu {
+
+}
+
+.menu__container {
+  @include container;
+}
+
+.menu__header {
+  width: 480px;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+}
+
+.menu__title {
+  margin-top: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+
+.menu__content {
+  width: 430px;
+  margin: 0;
+
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font: 300 18px/1.3 "Merriweather", "Tahoma", sans-serif;
+  &:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+
+.menu__price {
+  display: inline-block;
+  margin: 0;
+}
+
+.menu__description {
+  margin: 0;
+  span {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+  }
+}

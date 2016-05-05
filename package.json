@@ -1,0 +1,33 @@
+{
+  "name": "veggie",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OnePagePSD",
+  "author": "Raman Yasel",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yasell/veggie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasell/veggie/issues"
+  },
+  "homepage": "https://github.com/yasell/veggie",
+  "devDependencies": {
+    "autoprefixer": "6.3.3",
+    "browser-sync": "2.11.1",
+    "css-mqpacker": "^4.0.1",
+    "editorconfig-tools": "0.1.1",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.0",
+    "gulp-sass": "2.2.0"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}

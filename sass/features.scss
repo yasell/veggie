@@ -1,0 +1,51 @@
+.features {
+  width: 100%;
+  background: url(../img/features-bg.jpg) 50% 50% repeat orange;
+}
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 0;
+}
+
+.features__icon {
+  display: block;
+  height: 78px;
+  margin: 50px 0 0 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  &--soup {
+    width: 90px;
+    background-image: url(../img/icons/soup.png);
+  }
+  &--tea {
+    width: 105px;
+    background-image: url(../img/icons/tea.png);
+  }
+  &--cake {
+    width: 65px;
+    background-image: url(../img/icons/cake.png);
+  }
+}
+
+.features__title {
+  margin: 0;
+  padding: 30px 0 10px 0;
+  font: $sub-title;
+}
+
+.features__content {
+  margin: 0;
+  padding: 0 0 50px 0;
+  text-align: center;
+}

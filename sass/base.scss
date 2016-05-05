@@ -1,0 +1,48 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  // min-width: 1900px;
+  font: normal 16px/18px "Merriweather", "Tahoma", sans-serif;
+  font-weight: 300;
+  color: $gray;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 55px;
+  font-weight: 300;
+}
+
+h2 {
+  position: relative;
+  margin: 50px 0;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 300;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 253px;
+    height: 33px;
+    margin: auto;
+    background-image: url(../img/icons/icons.png);
+    background-repeat: no-repeat;
+    background-position: -79px -5px;
+  }
+}

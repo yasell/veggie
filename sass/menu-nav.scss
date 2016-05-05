@@ -1,0 +1,33 @@
+.menu-nav {
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.menu-nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.menu-nav__item {
+  font: 300 18px/35px "Merriweather", "Tahoma", sans-serif;
+  vertical-align: top;
+}
+
+.menu-nav__link {
+  display: block;
+  margin: 0;
+  padding: 10px 10px;
+  color: black;
+  text-decoration: none;
+  &--active {
+    color: $gray;
+    border: 1px solid $gray;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
